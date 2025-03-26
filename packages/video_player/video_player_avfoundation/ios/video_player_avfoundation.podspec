@@ -3,7 +3,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'video_player_avfoundation'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'Flutter Video Player'
   s.description      = <<-DESC
 A Flutter plugin for playing back video on a Widget surface.
@@ -20,4 +20,5 @@ Downloaded by pub (not CocoaPods).
 
   s.platform = :ios, '11.0'
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
+  s.resource_bundles = {'video_player_avfoundation_privacy' => ['Resources/PrivacyInfo.xcprivacy']}
 end
